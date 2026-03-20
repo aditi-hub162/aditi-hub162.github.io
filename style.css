@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+body {
+  margin:0;
+  font-family:Poppins;
+  background:linear-gradient(135deg,#ffd6ec,#d6e6ff,#e6d6ff);
+  text-align:center;
+  cursor:url('https://cur.cursors-4u.net/cursors/cur-13/cur1158.cur'),auto;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .cards{flex-direction:column;}
+}
+
+/* DARK MODE */
+.dark{
+  background:#1a1a2e;
+  color:white;
+}
+
+.toggle{
+  position:fixed;
+  top:10px;
+  right:10px;
+  padding:10px;
+  border:none;
+  border-radius:50%;
+  background:#ffb6d9;
+}
+
+/* LOGO */
+.logo-img{
+  width:120px;
+}
+
+/* HERO */
+.hero{padding:60px;}
+
+/* CARDS */
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:rgba(255,255,255,0.7);
+  padding:20px;
+  border-radius:20px;
+}
+
+/* GALLERY */
+.gallery img{
+  width:120px;
+  border-radius:15px;
+}
+
+/* FORM */
+input,textarea{
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  margin:5px;
+}
+
+/* LOGIN */
+.login-body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.login-box{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+}
+
+/* STARS */
+.stars::before{
+  content:"✦ ✧ ✦ ✧ ✦";
+  position:fixed;
+  width:100%;
+  animation:float 20s linear infinite;
+}
+
+/* SPARKLES */
+.sparkles::before{
+  content:"✨ ✨ ✨";
+  position:fixed;
+  width:100%;
+  animation:float 10s linear infinite;
+}
+
+/* HEARTS */
+.hearts::before{
+  content:"💖 💕 💗";
+  position:fixed;
+  width:100%;
+  animation:float 15s linear infinite;
+}
+
+@keyframes float{
+  from{transform:translateY(100vh);}
+  to{transform:translateY(-10vh);}
+}
